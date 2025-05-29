@@ -90,38 +90,3 @@ public class Transacao {
     public void setValor(double valor) { this.valor = valor; }
 }
 
-package com.extrato.extratobridge.controller;
-
-import com.extrato.extratobridge.model.Transacao;
-import com.extrato.extratobridge.service.ExtratoService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-
-@RestController
-@RequestMapping("/api/extrato")
-public class ExtratoController {
-
-    @Autowired
-    private ExtratoService extratoService;
-
-    @GetMapping
-    public List<Transacao> listarTransacoes() {
-        return extratoService.lerTransacoes();
-    }
-}
-
-package com.extrato.extratobridge;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class ExtratobridgeApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(ExtratobridgeApplication.class, args);
-	}
-}
-
-
