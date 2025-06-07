@@ -1,7 +1,7 @@
 # 📘 Projeto Java + Spring Boot: Leitor de Extrato Bancário Legado
 
 Este projeto simula a leitura de um extrato bancário em formato `.txt` e exibe os dados no navegador em formato JSON usando Spring Boot.
-Aqui vai um resumo, mas confira tudo no arquivo PDF neste mesmo diretório
+Aqui vai um resumo, mas confira tudo no arquivo PDF neste mesmo diretório, fiquem a vontade
 
 ---
 
